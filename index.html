@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formulaire</title>
+    <script  type ="text/javascript"  src ="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js" ></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2>formulaire de contact</h2>
+    </div>
+    <form action="" id="form">
+        <div class="form-control">
+            <label for="nom" name="nom">votre nom</label>
+            <input type="text" name="nom" id="nom">
+            <small>erreur</small>
+        </div>
+        
+            <div class="form-control">
+                <label for="email" name="email">votre mail</label>
+                <input type="email" name="email" id="email">
+                <small>erreur</small>
+            </div>
+                <div class="form-control">
+                    <label for="password" name="password">votre mot de passe</label>
+                    <input type="password" name="password" id="mdp">
+                    <small>erreur</small>
+                </div>
+        
+                    <div class="form-control">
+                        <label for="message" name="message">votre message</label>
+                        <textarea type="message" name="message"></textarea><br>
+                        <small>erreur</small>
+                    </div>
+                        <div class="form-control">
+                            <input type="submit" id="button" value="envoyer un Email" >
+                        </div>
+    </form>
+</div>
+<script type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+      <script type="text/javascript">
+        emailjs.init('user_aJnchVYtOKOk8EewDZS7k')
+      </script>
+    
+
+    <script src="./js/doc.js"></script>
+</body>
+</html>
